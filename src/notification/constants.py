@@ -1,0 +1,1 @@
+LENGTH_EMAIL = 150
