@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, JSON
-from database import Base
+from src.database import Base
 
 
 class Notify(Base):
