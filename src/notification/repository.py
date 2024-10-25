@@ -17,3 +17,6 @@ class NotifyRepository:
         notify = self.model(**notify.dict())
         self.save(notify)
         return notify
+
+    def get_one(self, notify_id: int):
+        return self.db.query(self.model).get(notify_id)
