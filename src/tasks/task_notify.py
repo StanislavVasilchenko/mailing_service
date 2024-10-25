@@ -18,5 +18,5 @@ def send_notification(notify_id: int, session: Session = get_db().__next__()):
     for address in recipient:
         if address.isdigit():
             send_to_telegram(telegram_id=address, message_text=notify_db.message)
-        else:
+        elif "@" in address:
             send_mail(receiver_email=address, message_text=notify_db.message)
