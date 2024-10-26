@@ -8,6 +8,5 @@ class Logs(Base):
 
     logs_id = Column(Integer, primary_key=True, autoincrement=True)
     sent_at = Column(DateTime, default=datetime.now(), nullable=False)
-    email = Column(String(length=50), nullable=True)
-    telegram = Column(String(length=50), nullable=True)
+    address = Column(String(length=50), nullable=True)
     sent = Column(Boolean(), default=True, nullable=False)
