@@ -1,0 +1,4 @@
+LENGTH_EMAIL = 150
+BASE_URL_TELEGRAM = "https://api.telegram.org/bot"
+DELAY_HOUR = 3600
+DELAY_DAY = 86400
